@@ -83,6 +83,117 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+:root {
+  --red: #db5461;
+  --green: #93a490;
+  --blue: #3d5467;
+  --yellow: #ffd131;
+  --orange: #ff9f1c;
+  --white: whitesmoke;
+  --black: #1B2021;
+}
+html {
+  font-size: 16px;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  background-color: var(--green);
+}
+body {
+/*  background-color: var(--green);*/
+  color: var(--white);
+  text-align: center;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+}
+#bg-img {
+  width: calc(100vw + 20px);
+  height: calc(100vh + 20px);
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  z-index: -99;
+  background: url(../img/bg-4.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: var(--green);
+  filter: blur(3px) grayscale(10%);
+  background-blend-mode: multiply;
+}
+main {
+  padding: 32vh 0 0 0;
+}
+.image {
+  margin: 25px 0 50px;
+}
+footer {
+  width: 100vw;
+  padding: 15px 0;
+  background-color: var(--green);
+  position: absolute;
+  top: 100vh;
+}
+footer p {
+  font-family: linotype-sabon, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+a, a:link, a:visited {
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: 1px solid var(--blue);
+  transition: color .5s ease;
+}
+a:hover, a:active {
+  color: var(--blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--blue);
+}
+h1 {
+  margin: 0;
+  font-size: 6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: .5px;
+}
+h2 {
+  margin: 0;
+  font-size: 3rem;
+  text-transform: lowercase;
+  font-style: italic;
+}
+h3 {
+  font-family: linotype-sabon, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  font-size: 2rem;
+/*  font-weight: 300;*/
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+svg {
+  fill: var(--white);
+}
+hr {
+  border: none;
+  border-bottom: 3px solid var(--white);
+  width: 50vw;
+  margin: 50px auto;
+}
+
+
+
+
 
 /* ==========================================================================
    Helper classes
