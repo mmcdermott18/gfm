@@ -83,6 +83,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {box-sizing: border-box;}
 :root {
   --red: #db5461;
   --green: #93a490;
@@ -109,19 +110,19 @@ body {
   overflow-x: hidden;
 }
 #bg-img {
-  width: calc(100vw + 20px);
-  height: calc(100vh + 20px);
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  left: -10px;
-  top: -10px;
+  left: 0;
+  top: 0;
   z-index: -99;
-  background: url(../img/bg-4.jpg) no-repeat center center; 
+  background: url(../img/bg-blur.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-color: var(--green);
-  filter: blur(3px) grayscale(10%);
+  filter: grayscale(10%);
   background-blend-mode: multiply;
 }
 main {
@@ -190,10 +191,6 @@ hr {
   width: 50vw;
   margin: 50px auto;
 }
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -278,8 +275,89 @@ hr {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 1200px) {
+  main {
+    padding: 32vh 12.5vw 0;
+  }
+  .image {
+    margin: 25px 0 50px;
+  }
+  footer {
+    padding: 15px 0;
+  }
+  h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  hr {
+    width: 75vw;
+    margin: 50px auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 18vh 15px 0;
+  }
+  footer {
+    padding: 15px 0;
+    top: initial;
+    bottom: 0;
+  }
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  hr {
+    width: calc(100vw - 30px);
+    margin: 50px auto;
+  }
+  @media only screen and (max-width: 499px) {
+  main {
+    padding: 18vh 15px 0;
+  }
+  footer {
+    padding: 15px 0;
+    top: initial;
+    bottom: 0;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  hr {
+    width: calc(100vw - 30px);
+    margin: 50px auto;
+  }
 }
 
 @media print,
