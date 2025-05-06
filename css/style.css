@@ -128,8 +128,44 @@ body {
 main {
   padding: 32vh 0 0 0;
 }
+main.interior {
+  padding: 50px 100px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+main.interior div.left {
+  grid-column: 1 2;
+}
+main.interior div.right {
+  grid-column: 2 3;
+}
+main.interior div.right img {
+  width: 100%;
+}
+button {
+  margin: 25px 0 0;
+  border: 2px solid var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300px;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 7px 10px;
+}
 .image {
   margin: 25px 0 50px;
+}
+header {
+  background-color: var(--white);
+  color: var(--green);
+  padding: 15px 100px;
+  text-align: left;
+}
+header p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 footer {
   width: 100vw;
@@ -138,10 +174,53 @@ footer {
   position: absolute;
   top: 100vh;
 }
+footer.interior {
+  width: 100vw;
+  padding: 15px 0;
+  background-color: var(--white);
+  position: initial;
+  top: initial;
+}
 footer p {
   font-family: linotype-sabon, sans-serif;
   font-weight: 400;
   font-style: italic;
+}
+aside {
+  width: 100vw;
+  padding: 10px 0 13px;
+  background-color: peachpuff;
+  position: absolute;
+  top: 0;
+}
+aside p {
+  font-family: linotype-sabon, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--black);
+  margin: 0;
+}
+header a, header a:link, header a:visited {
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: none;
+  transition: none;
+}
+header a:hover, header a:active {
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: none;
+}
+aside a, aside a:link, aside a:visited {
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 1px solid var(--black);
+  transition: border-bottom .5s ease;
+}
+aside a:hover, aside a:active {
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 1px solid var(--red);
 }
 a, a:link, a:visited {
   color: var(--white);
@@ -154,6 +233,28 @@ a:hover, a:active {
   text-decoration: none;
   border-bottom: 1px solid var(--blue);
 }
+footer.interior a, footer.interior a:link, footer.interior a:visited {
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: 1px solid var(--green);
+  transition: color .5s ease;
+}
+footer.interior a:hover, footer.interior a:active {
+  color: var(--blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--blue);
+}
+.image a, .image a:link, .image a:visited {
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: none;
+  transition: color .5s ease;
+}
+.image a:hover, .image a:active {
+  color: var(--yellow);
+  text-decoration: none;
+  border-bottom: none;
+}
 h1 {
   margin: 0;
   font-size: 6rem;
@@ -164,9 +265,10 @@ h1 {
 }
 h2 {
   margin: 0;
+  font-family: linotype-sabon, sans-serif;
   font-size: 3rem;
-  text-transform: lowercase;
   font-style: italic;
+  font-weight: 200;
 }
 h3 {
   font-family: linotype-sabon, sans-serif;
@@ -274,6 +376,33 @@ hr {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (max-width: 1525px) {
+  main {
+    padding: 32vh 5vw 0;
+  }
+  footer {
+    padding: 15px 0;
+  }
+  h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  hr {
+    width: 75vw;
+    margin: 50px auto;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
   main {
