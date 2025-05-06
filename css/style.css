@@ -279,9 +279,6 @@ hr {
   main {
     padding: 32vh 12.5vw 0;
   }
-  .image {
-    margin: 25px 0 50px;
-  }
   footer {
     padding: 15px 0;
   }
@@ -310,13 +307,9 @@ hr {
   }
   footer {
     padding: 15px 0;
-    top: initial;
-    bottom: 0;
   }
   h1 {
     font-size: 3.5rem;
-    line-height: 1.1;
-    margin-bottom: 15px;
   }
   h2 {
     font-size: 2.5rem;
@@ -329,21 +322,14 @@ hr {
   }
   hr {
     width: calc(100vw - 30px);
-    margin: 50px auto;
   }
+}
   @media only screen and (max-width: 499px) {
   main {
     padding: 18vh 15px 0;
   }
-  footer {
-    padding: 15px 0;
-    top: initial;
-    bottom: 0;
-  }
   h1 {
     font-size: 3rem;
-    line-height: 1.1;
-    margin-bottom: 15px;
   }
   h2 {
     font-size: 2rem;
@@ -353,10 +339,6 @@ hr {
   }
   p {
     font-size: 1rem;
-  }
-  hr {
-    width: calc(100vw - 30px);
-    margin: 50px auto;
   }
 }
 
