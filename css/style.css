@@ -151,6 +151,9 @@ main.interior div.right {
 main.interior div.right img {
   width: 100%;
 }
+main.shop {
+  padding: 50px 100px;
+}
 button {
   margin: 25px 0 0;
   border: 2px solid var(--white);
