@@ -173,24 +173,17 @@ header {
   padding: 0 100px;
   text-align: left;
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: 1fr 100px;
+  margin-top: 49px;
 }
 header p {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-header p a, header p a:link, header p a:visited {
-  color: var(--green);
-  text-decoration: none;
-  border: none;
-  transition: none;
-}
-header p a:hover, header p a:active {
-  color: var(--green);
-  border: none;
-}
 nav {
-  margin: 1.2em 0;
+  position: absolute;
+  top: 75px;
+  right: 100px;
 }
 nav ul {
   list-style-type: none;
@@ -199,11 +192,9 @@ nav ul {
 }
 nav ul li {
   margin: 0;
-  padding: 0 0 0 30px;
-  float: left;
+  padding: 0;
 }
 nav a, nav a:link, nav a:visited {
-  color: var(--green);
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -212,36 +203,8 @@ nav a, nav a:link, nav a:visited {
   transition: all 500ms ease;
 }
 nav a:hover, nav a:active {
-  color: var(--green);
-  border-bottom: 1px solid var(--green);
-}
-#home nav {
-  position: absolute;
-  top: 75px;
-  right: 100px;
-}
-#home nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-#home nav ul li {
-  margin: 0;
-  padding: 0 0 0 30px;
-  float: left;
-}
-#home nav a, #home nav a:link, #home nav a:visited {
   color: var(--white);
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-  border-bottom: 2px solid rgba(0,0,0,0);
-  transition: all 500ms ease;
-}
-#home nav a:hover, #home nav a:active {
-  color: var(--white);
-  border-bottom: 2px solid var(--white);
+  border-bottom: 1px solid var(--white);
 }
 footer {
   width: 100vw;
@@ -275,6 +238,17 @@ aside p {
   font-style: italic;
   color: var(--black);
   margin: 0;
+}
+header a, header a:link, header a:visited {
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: none;
+  transition: none;
+}
+header a:hover, header a:active {
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: none;
 }
 aside a, aside a:link, aside a:visited {
   color: var(--black);
@@ -322,7 +296,7 @@ footer.interior a:hover, footer.interior a:active {
 }
 h1 {
   margin: 0;
-  font-size: 5.5rem;
+  font-size: 6rem;
   font-weight: 200;
   text-transform: uppercase;
   color: var(--white);
